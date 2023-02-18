@@ -1,16 +1,15 @@
-name: Auto commit
+name: Daily commit
 
 on:
   push:
     branches:
       - master
   schedule:
-  - cron: "*/4 * * * *"
-# This command allows us to run the Action automatically from the Actions tab.
+  - cron: "*/5 * * * *" # every 5 minutes
   workflow_dispatch:
 jobs:
   auto_commit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest, windows-latest, macos-latest
     steps:
       - uses: actions/checkout@v3      
         with:
@@ -18,8 +17,8 @@ jobs:
          fetch-depth: 0
       - name: Set date variable
         run: |
-          echo "date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-      - name: Write into CURRENT_DATE
+          echo "date=$(date +'%Y-%m-%d %H:%M:%S'), timestamp: $(time())" >> $GITHUB_ENV
+      - name: Write the date into CURRENT_DATE
         run: |
           echo $date > CURRENT_DATE
       - name: Commit
@@ -33,4 +32,3 @@ jobs:
         with:
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          force: true
