@@ -1,6 +1,6 @@
-[![Auto commit](https://github.com/mgcodeur/daily-commit/workflows/Auto%20commit/badge.svg)](https://github.com/mgcodeur/daily-commit/actions?query=workflow%3A%22Auto+commit%22)
+[![Daily Commit](https://github.com/mgcodeur/daily-commit/workflows/Auto%20commit/badge.svg)](https://github.com/mgcodeur/daily-commit/actions?query=workflow%3A%22Auto+commit%22)
 
-## Auto commit
+## Daily Commit
 
 This is a template for auto committing to GitHub using GitHub Actions.  
 Check out the [workflow](.github/workflows/autocommit.yml) for more details.  
