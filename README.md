@@ -1,4 +1,4 @@
-[![Auto commit](https://github.com/Ostabo/auto-commit/workflows/Auto%20commit/badge.svg)](https://github.com/Ostabo/auto-commit/actions?query=workflow%3A%22Auto+commit%22)
+[![Auto commit](https://github.com/mgcodeur/daily-commit/workflows/Auto%20commit/badge.svg)](https://github.com/mgcodeur/daily-commit/actions?query=workflow%3A%22Auto+commit%22)
 
 ## Auto commit
 
@@ -18,7 +18,7 @@ To configure cron job, check out [this](https://crontab.guru/) website.
 4. Make sure GitHub Actions is allowed to read AND write to your repository  
 *Settings > Actions > General > Workflow permissions*  
 ![Allow actions](assets/tut-auto-commit-permissions.png)  
-5. GitHub Action will now run every day at 00:00 UTC and commit the current date to [*CURRENT_DATE*](https://github.com/Ostabo/auto-commit/blob/master/CURRENT_DATE) 
+5. GitHub Action will now run every day at 00:00 UTC and commit the current date to [*CURRENT_DATE*](https://github.com/mgcodeur/daily-commit/blob/master/CURRENT_DATE) 
 
 Note that GitHub Actions cron jobs might be delayed at high load times.
 
