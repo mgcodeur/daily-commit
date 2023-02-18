@@ -18,7 +18,7 @@ To configure cron job, check out [this](https://crontab.guru/) website.
 4. Make sure GitHub Actions is allowed to read AND write to your repository  
 *Settings > Actions > General > Workflow permissions*  
 ![Allow actions](assets/tut-auto-commit-permissions.png)  
-5. GitHub Action will now run every day at 00:00 UTC and commit the current date to [*CURRENT_DATE*](https://github.com/mgcodeur/daily-commit/blob/master/CURRENT_DATE) 
+5. GitHub Action will now run every ??? (it depends on your yaml configuration) and commit the current date to [*CURRENT_DATE*](https://github.com/mgcodeur/daily-commit/blob/master/CURRENT_DATE) 
 
 Note that GitHub Actions cron jobs might be delayed at high load times.
 
