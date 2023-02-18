@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-  - cron: "*/30 * * * *"
+  - cron: "*/2 * * * *"
 jobs:
   auto_commit:
     runs-on: ubuntu-latest
