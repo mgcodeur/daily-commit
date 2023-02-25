@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-  - cron: "0 1 * * *" # at 01:00
+  - cron: "*/10 * * * *" # every 10mn
   workflow_dispatch:
 jobs:
   auto_commit:
